@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  dev:
+    build: .
+    image: dev-starknet-aixblock
+    volumes:
+      - ~/.ssh:/root/.ssh
+      - ../..:/workspaces:cached
+    command: sleep infinity
